@@ -1,84 +1,81 @@
 import java.util.Scanner;
 
-public class Nokia3310 {
+public class Nokia {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-       
-System.out.println("                              NOKIA 3310");
+        System.out.print("""
+               MENU
+            1.  PhoneBook
+            2.  Messages
+            3.  Chat
+            4.  Call Register
+            5.  Tones
+            6.  Settings
+            7.  Call divert
+            8.  Games
+            9.  Calculator
+            10. Reminder
+            11. Clock
+            12. Profiles
+            13. SIM services
+               """);
 
+        System.out.print("Enter An Option: ");
+        int useroption = input.nextInt();
 
-        System.out.println("MENU");
-        System.out.println(" 1. Phonebook");
-        System.out.println(" 2. Messages ");
-        System.out.println(" 3. Chat");
-        System.out.println(" 4. Callregister");
-        System.out.println(" 5. Tones");
-        System.out.println(" 6. Setting");
-        System.out.println(" 7. Calldivert");
-        System.out.println(" 8. Games");
-        System.out.println(" 9. Calculator");
-        System.out.println(" 10. Reminders");
-        System.out.println(" 11. Clock");
-        System.out.println(" 12. Profiles");
-        System.out.println(" 13. SIM service \n");
+        switch (useroption) {
+            case 1:
+                System.out.print("""
+                       PhoneBook
+                    1. Search
+                    2. Service No
+                    3. Add name
+                    4. Erase
+                    5. Edit
+                    6. Assign tone
+                    7. Send b'card
+                    8. Options
+                    9. Speed dials
+                    10. Voice tags
+                    """);
 
+                System.out.println("Enter An Option: ");
+                useroption = input.nextInt();
 
-System.out.println("ENTER....");
-int choice = input.nextInt();
-
-
-      switch(choice){
-     
-       case 1 : {
-System.out.println("phonebook");
-            System.out.println(" 1. search");
-            System.out.println(" 2. service nos ");
-            System.out.println(" 3. add name");
-            System.out.println(" 4. erase");
-            System.out.println(" 5. edit");
-            System.out.println(" 6. assign tone");
-            System.out.println(" 7. send b'card");
-            System.out.println(" 8. option");
-            System.out.println(" 9. speed dails");
-            System.out.println(" 10. voice tags");
-
-              System.out.println("Enter An Option: ");
-              subchoice = input.nextInt();
-
-                switch (choice) {
+                switch (useroption) {
                     case 1:
-                        System.out.println("search");
+                        System.out.println("Search");
                         break;
                     case 2:
-                        System.out.println("service No");
+                        System.out.println("Service No");
                         break;
                     case 3:
-                        System.out.println("add name");
+                        System.out.println("Add name");
                         break;
                     case 4:
-                        System.out.println("erase");
+                        System.out.println("Erase");
                         break;
                     case 5:
-                        System.out.println("edit");
+                        System.out.println("Edit");
                         break;
                     case 6:
-                        System.out.println("assign tone");
+                        System.out.println("Assign tone");
                         break;
                     case 7:
-                        System.out.println("send b'card");
+                        System.out.println("Send b'card");
                         break;
                     case 8:
-                        System.out.println("options");
+                        System.out.println("Options");
 
                         System.out.print("""
                             1. Type of view
                             2. Memory status
                              """);
-System.out.println("Enter An Option: ");
-subchoice = input.nextInt();
+                        System.out.println("Enter An Option: ");
+                        useroption = input.nextInt();
 
-                        switch (subchoice) {
+                        switch (useroption) {
                             case 1:
                                 System.out.println("Type of view");
                                 break;
@@ -95,25 +92,26 @@ subchoice = input.nextInt();
                         break;
                 }
                 break;
-}
-           
-    case 2  : {
-System.out.println("Messages");
-            System.out.println(" 1. write message");
-            System.out.println(" 2. inbox");
-            System.out.println(" 3. outbox");
-            System.out.println(" 4. picture images");
-            System.out.println(" 5. templates");
-            System.out.println(" 6. smileys");
-            System.out.println(" 7. message setting");
-            System.out.println(" 8. info service");
-            System.out.println(" 9. voice mailbox number");
-            System.out.println(" 10. service command editor");
+
+            case 2:
+                System.out.print("""
+                       Messages
+                    1. Write messages
+                    2. Inbox
+                    3. Outbox
+                    4. Picture messages
+                    5. Templates
+                    6. Smileys
+                    7. Message settings
+                    8. Info service
+                    9. Voice mailbox number
+                    10. Service command editor
+                    """);
 
                 System.out.println("Enter An Option: ");
-                choice = input.nextInt();
+                useroption = input.nextInt();
 
-                switch (choice) {
+                switch (useroption) {
                     case 1:
                         System.out.println("Write messages");
                         break;
@@ -140,10 +138,10 @@ System.out.println("Messages");
                             2. Common
                                """);
 
-System.out.println("Enter option: ");
-choice = input.nextInt();
+                        System.out.println("Enter option: ");
+                        useroption = input.nextInt();
 
-                        switch (subchoice) {
+                        switch (useroption) {
                             case 1:
                                 System.out.println("Set");
 
@@ -156,7 +154,7 @@ choice = input.nextInt();
                                 System.out.println("Enter An Option: ");
                                 useroption = input.nextInt();
 
-                                switch (subchoice) {
+                                switch (useroption) {
                                     case 1:
                                         System.out.println("Message centre number");
                                         break;
@@ -179,10 +177,10 @@ choice = input.nextInt();
                                     3. Character support
                                          """);
 
- System.out.println("Enter An Option: ");
-choice = input.nextInt();
+                                System.out.println("Enter An Option: ");
+                                useroption = input.nextInt();
 
-                                switch (subchoice) {
+                                switch (useroption) {
                                     case 1:
                                         System.out.println("Delivery reports");
                                         break;
@@ -208,27 +206,28 @@ choice = input.nextInt();
                         break;
                 }
                 break;
-}
 
-            case 3:{
+            case 3:
                 System.out.println("Chat");
                 break;
-}
-            case 4 : {
-System.out.println("Call register");
-            System.out.println(" 1. missed call");
-            System.out.println(" 2. recieved call");
-            System.out.println(" 3. dailled numbers");
-            System.out.println(" 4. erase recent call list");
-            System.out.println(" 5. show call duration");
-            System.out.println(" 6. show call cost");
-            System.out.println(" 7. call cost setting");
-            System.out.println(" 8. prepaid setting");
+
+            case 4:
+                System.out.print("""
+                       Call register
+                    1. Missed calls
+                    2. Received calls
+                    3. Dialed numbers
+                    4. Erase recent call lists
+                    5. Show call duration
+                    6. Show call cost
+                    7. Call cost settings
+                    8. Prepaid credit
+                          """);
 
                 System.out.println("Enter option: ");
-                choice = input.nextInt();
+                useroption = input.nextInt();
 
-                switch (choice) {
+                switch (useroption) {
                     case 1:
                         System.out.println("Missed calls");
                         break;
@@ -252,10 +251,10 @@ System.out.println("Call register");
                             5. Clear timers
                                 """);
 
-System.out.println("Enter option: ");
- choice = input.nextInt();
+                        System.out.println("Enter option: ");
+                        useroption = input.nextInt();
 
-                        switch (subchoice) {
+                        switch (useroption) {
                             case 1:
                                 System.out.println("Last call duration");
                                 break;
@@ -283,10 +282,10 @@ System.out.println("Enter option: ");
                             3. Clear counters
                                       """);
 
- System.out.println("Enter An Option: ");
-choice = input.nextInt();
+                        System.out.println("Enter An Option: ");
+                        useroption = input.nextInt();
 
-                        switch (subchoice) {
+                        switch (useroption) {
                             case 1:
                                 System.out.println("Last call cost");
                                 break;
@@ -308,9 +307,9 @@ choice = input.nextInt();
                                     """);
 
                         System.out.println("Enter option: ");
-                        choice = input.nextInt();
+                        useroption = input.nextInt();
 
-                        switch (subchoice) {
+                        switch (useroption) {
                             case 1:
                                 System.out.println("Call cost limit");
                                 break;
@@ -326,22 +325,24 @@ choice = input.nextInt();
                 }
                 break;
 
-case 5 : {
-System.out.println("Tone");
-            System.out.println(" 1. ringing tone");
-            System.out.println(" 2. ringing volume");
-            System.out.println(" 3. incoming call alert");
-            System.out.println(" 4. composer");
-            System.out.println(" 5. message alert tone");
-            System.out.println(" 6. keypad tones");
-            System.out.println(" 7. warning and games tones");
-            System.out.println(" 8. vibrating alert");
-            System.out.println(" 9. screen saver");
+            case 5:
+                System.out.print("""
+                       Tones
+                    1. Ringing tone
+                    2. Ringing volume
+                    3. Incoming call alert
+                    4. Composer
+                    5. Message alert tone
+                    6. Keypad tones
+                    7. Warning and game tones
+                    8. Vibrating alert
+                    9. Screen saver
+                          """);
 
                 System.out.println("Enter An Option: ");
-                choice = input.nextInt();
+                useroption = input.nextInt();
 
-                switch (choice) {
+                switch (useroption) {
                     case 1:
                         System.out.println("Ringing tone");
                         break;
@@ -371,9 +372,8 @@ System.out.println("Tone");
                         break;
                 }
                 break;
-}
 
-            case 6:{
+            case 6:
                 System.out.print("""
                        Settings
                     1. Call settings
@@ -383,9 +383,9 @@ System.out.println("Tone");
                      """);
 
                 System.out.println("Enter An Option: ");
-                choice = input.nextInt();
+                useroption = input.nextInt();
 
-                switch (subchoice) {
+                switch (useroption) {
                     case 1:
                         System.out.println("Call settings");
                         System.out.print("""
@@ -400,7 +400,7 @@ System.out.println("Tone");
                         System.out.println("Enter An Option: ");
                         useroption = input.nextInt();
 
-                        switch (subchoice) {
+                        switch (useroption) {
                             case 1:
                                 System.out.println("Automatic redial");
                                 break;
@@ -434,7 +434,7 @@ System.out.println("Tone");
                                  """);
 
                         System.out.print("Enter An Option: ");
-                        subchoice = input.nextInt();
+                        useroption = input.nextInt();
 
                         switch (useroption) {
                             case 1:
@@ -458,7 +458,7 @@ System.out.println("Tone");
                         }
                         break;
 
-                    case 3:{
+                    case 3:
                         System.out.println("Security settings");
                         System.out.print("""
                             1. PIN code request
@@ -470,10 +470,9 @@ System.out.println("Tone");
                                  """);
 
                         System.out.print("Enter An Option: ");
-                        choice = input.nextInt();
-}
+                        useroption = input.nextInt();
 
-                        switch (subchoice) {
+                        switch (useroption) {
                             case 1:
                                 System.out.println("PIN code request");
                                 break;
@@ -500,26 +499,21 @@ System.out.println("Tone");
                         break;
                 }
                 break;
-}
 
-            case 7:{
-System.out.println("Call divert");
+            case 7:
+                System.out.println("Call divert");
                 break;
-}
-            case 8 : {
-System.out.println("Games");
+            case 8:
+                System.out.println("Games");
                 break;
-}
-            case 9:{
- System.out.println("Calculator");
+            case 9:
+                System.out.println("Calculator");
                 break;
-}
-            case 10 : {
- System.out.println("Reminder");
+            case 10:
+                System.out.println("Reminder");
                 break;
-}
 
-            case 11:{
+            case 11:
                 System.out.print("""
                        Clock
                     1. Alarm clock
@@ -531,9 +525,9 @@ System.out.println("Games");
                      """);
 
                 System.out.print("Enter An Option: ");
-                choice = input.nextInt();
+                useroption = input.nextInt();
 
-                switch (subchoice) {
+                switch (useroption) {
                     case 1:
                         System.out.println("Alarm clock");
                         break;
@@ -554,17 +548,13 @@ System.out.println("Games");
                         break;
                 }
                 break;
-}
 
-            case 12:{
+            case 12:
                 System.out.println("Profiles");
                 break;
-}
-            case 13:{
+            case 13:
                 System.out.println("SIM services");
                 break;
+        }
+    }
 }
-             
-        
-    
-
