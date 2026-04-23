@@ -1,0 +1,1 @@
+// when a program divides one integer with another it outcomes/result comes out as an whole number , the fractional part is being taken away if we used data typeint, and to avoid an outcome where the fractional part is being take we use the data tyoe double or float
